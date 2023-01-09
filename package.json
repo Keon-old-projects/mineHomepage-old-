@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.3"
+  },
+  "name": "mineprofile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keon981/mineProfile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keon981/mineProfile/issues"
+  },
+  "homepage": "https://github.com/keon981/mineProfile#readme",
+  "description": ""
+}
