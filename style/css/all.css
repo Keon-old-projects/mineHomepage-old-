@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -334,4 +335,8 @@ template {
 
 .border-1 {
   border: 1px solid #000;
+}
+
+* {
+  font-family: "Noto Sans TC", Microsoft YaHei, Arial, "宋體", Tahoma, Helvetica, sans-serif;
 }/*# sourceMappingURL=all.css.map */

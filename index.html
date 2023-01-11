@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,198 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/css/bs5-all.css">
 </head>
+
 <body>
-    <header>
-        <!-- 導覽列 -->
-            <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">LOGO</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarID">
-                        <ul class="navbar-nav">
-                            <li><a class="nav-link" aria-current="page" href="#">Home</a></li>
-                            <li><a class="nav-link" aria-current="page" href="#">About</a></li>
-                            <li><a class="nav-link" aria-current="page" href="#">Skills</a></li>
-                            
-                            <li><a class="nav-link" aria-current="page" href="#">project</a></li>
-                            <li><a class="nav-link" aria-current="page" href="#">More</a></li>
-                            <li><a class="nav-link" aria-current="page" href="#">contact</a></li>
-                        </ul>
+    <header class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav navbar-nav-scroll ms-auto mb-2 mb-lg-0 ">
+                    <li>
+                        <a href="#home" class="nav-link text-secondary">
+
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link text-white">
+
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skill" class="nav-link text-white">
+
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#project" class="nav-link text-white">
+
+                            project
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#more" class="nav-link text-white">
+
+                            More
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link text-white">
+
+                            contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- home -->
+    <section class="vh-100 w-100 bg-img bg-img-1" id="home">
+
+    </section>
+
+    <!-- about -->
+    <section id="about" class="pt-5">
+        <article class="container">
+            <h2 class="fw-bolder text-center mb-4">About Me <br>
+                <em class="fs-6 text-muted"> 我在亞州大學就讀數位媒體設計系系，能使用 HTML + CSS + javascript 編寫網頁原始碼。</em>
+            </h2>
+            <!-- 網格卡片 -->
+            <main class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+                <!-- card -->
+                <div class="col">
+                    <div class="card overflow-hidden bg-dark text-white" style="max-height: 200px;">
+                        <a href="#">
+                            <img src="https://picsum.photos/600/200/?random=10">
+                            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </nav>
-    </header>
-    
+                <!-- card -->
+                <div class="col">
+                    <div class="card overflow-hidden bg-dark text-white" style="max-height: 200px;">
+                        <a href="#">
+                            <img src="https://picsum.photos/600/200/?random=10">
+                            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col">
+                    <div class="card overflow-hidden bg-dark text-white" style="max-height: 200px;">
+                        <a href="#">
+                            <img src="https://picsum.photos/600/200/?random=10">
+                            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col">
+                    <div class="card overflow-hidden bg-dark text-white" style="max-height: 200px;">
+                        <a href="#">
+                            <img src="https://picsum.photos/600/200/?random=10">
+                            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </article>
+    </section>
 
-   <!-- JavaScript Bundle with Popper -->
+    <!-- skills -->
+    <section id="skill" class="pt-5">
+       
+        <article id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <main class="carousel-inner">
+                <!-- main1 -->
+                <div class="carousel-item active">
+                    <div class="bg-secondary">
+                        <div class="container">
+                            <h2>Front-End Skills</h2>
+                            <div class="d-flex">
+                                <p> b5-col</p>
+                                <p> b5-col</p>
+                                <p> b5-col</p>
+                                <p> b5-col</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main2 -->
+                <div class="carousel-item">
+                    <div class="container bg-secondary">
+                        <h2>Tools & Other</h2>
+                    </div>
+                </div>
+            </main>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </article>
+    </section>
+
+
+    <!-- project -->
+    <section id="project" class="pt-5">
+        <h2>Project</h2>
+    </section>
+
+
+    <!-- more -->
+    <section id="more" class="pt-5">
+        <h2>See More Me</h2>
+    </section>
+
+
+    <!-- contact -->
+    <section id="contact" class="pt-5">
+        <h2>Contact</h2>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+   
 </body>
+
 </html>
