@@ -2,6 +2,21 @@
   font-family: 'Noto Sans TC', Microsoft YaHei, Arial, '宋體', Tahoma, Helvetica, sans-serif;
 }
 
+// 尺寸設定
+.vh{
+  &-25{
+    height: 25vh;
+
+  }
+  &-50{
+    height: 50vh;
+
+  }
+}
+
+
+// 背景設定
+
 .bg-img {
   background-position: center;
   background-size: cover;
@@ -9,5 +24,28 @@
 
   &-1 {
     background-image: url("https://fakeimg.pl/1000/?text=Home");
+  }
+  &-2 {
+    background-image: url("https://fakeimg.pl/1000/?text=Home");
+  }
+}
+
+// 卡片設定
+.card-img-overlay {
+  transition: all .25s;
+
+  .card-title {
+    span {
+      display: none;
+
+    }
+  }
+
+  &:hover {
+    background-color: rgba($dark, .7);
+    span {
+      display: inline;
+      color: $light;
+    }
   }
 }

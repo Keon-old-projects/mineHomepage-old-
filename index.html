@@ -86,8 +86,7 @@
                         <a href="#">
                             <img src="https://picsum.photos/600/200/?random=10">
                             <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Last updated 3 mins ago</p>
+                                <h5 class="card-title"><span>Card title</span></h5>
                             </div>
                         </a>
                     </div>
@@ -96,10 +95,9 @@
                 <div class="col">
                     <div class="card overflow-hidden bg-dark text-white" style="max-height: 200px;">
                         <a href="#">
-                            <img src="https://picsum.photos/600/200/?random=10">
+                            <img src="https://picsum.photos/600/200/?random=3">
                             <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Last updated 3 mins ago</p>
+                                <h5 class="card-title"><span>Card title</span></h5>
                             </div>
                         </a>
                     </div>
@@ -108,10 +106,9 @@
                 <div class="col">
                     <div class="card overflow-hidden bg-dark text-white" style="max-height: 200px;">
                         <a href="#">
-                            <img src="https://picsum.photos/600/200/?random=10">
+                            <img src="https://picsum.photos/600/200/?random=1">
                             <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Last updated 3 mins ago</p>
+                                <h5 class="card-title"><span>Card title</span></h5>
                             </div>
                         </a>
                     </div>
@@ -120,10 +117,9 @@
                 <div class="col">
                     <div class="card overflow-hidden bg-dark text-white" style="max-height: 200px;">
                         <a href="#">
-                            <img src="https://picsum.photos/600/200/?random=10">
+                            <img src="https://picsum.photos/600/200/?random=4">
                             <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Last updated 3 mins ago</p>
+                                <h5 class="card-title"><span>Card title</span></h5>
                             </div>
                         </a>
                     </div>
@@ -134,36 +130,40 @@
 
     <!-- skills -->
     <section id="skill" class="pt-5">
-       
+
         <article id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
             </div>
             <main class="carousel-inner">
                 <!-- main1 -->
-                <div class="carousel-item active">
-                    <div class="bg-secondary">
-                        <div class="container">
-                            <h2>Front-End Skills</h2>
-                            <div class="d-flex">
-                                <p> b5-col</p>
-                                <p> b5-col</p>
-                                <p> b5-col</p>
-                                <p> b5-col</p>
-                            </div>
+                <div class="carousel-item bg-secondary active py-5">
+
+                    <div class="container">
+                        <h2 class="text-center">Front-End Skills</h2>
+                        <div class="d-flex justify-content-center py-3">
+                            <p> b5-col</p>
+                            <p> b5-col</p>
+                            <p> b5-col</p>
+                            <p> b5-col</p>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- main2 -->
-                <div class="carousel-item">
-                    <div class="container bg-secondary">
-                        <h2>Tools & Other</h2>
+                <div class="carousel-item bg-secondary py-5">
+                    <div class="container">
+                        <h2 class="text-center">Tools & Other</h2>
+                        <div class="d-flex justify-content-center py-3">
+                            <p> b5-col</p>
+                            <p> b5-col</p>
+                            <p> b5-col</p>
+                            <p> b5-col</p>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -182,24 +182,97 @@
 
 
     <!-- project -->
-    <section id="project" class="pt-5">
-        <h2>Project</h2>
+    <section id="project" class="container pt-5 pb-4">
+        <h2 class="fw-bolder text-center mb-4">Project<br>
+            <em class="fs-6 text-muted"> 我的作品成果</em>
+        </h2>
+        <!-- 卡片區 -->
+        <main class="row row-cols-lg-1 row-cols-2 g-3">
+            <!-- 卡片 -->
+            <div class="col">
+                <div class="card flex-row border-0">
+                    <picture>
+                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
+                    </picture>
+                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 -->
+            <div class="col">
+                <div class="card flex-row border-0">
+                    <picture>
+                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
+                    </picture>
+                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 -->
+            <div class="col">
+                <div class="card flex-row border-0">
+                    <picture>
+                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
+                    </picture>
+                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 -->
+            <div class="col">
+                <div class="card flex-row border-0">
+                    <picture>
+                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
+                    </picture>
+                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </section>
 
 
     <!-- more -->
-    <section id="more" class="pt-5">
-        <h2>See More Me</h2>
+    <section id="more" class="d-flex flex-column justify-content-center vh-50 bg-img bg-img-2">
+        <h2 class="fw-bolder text-center mb-4">See More Me</h2>
+        <div class="text-center">
+            <a class="btn btn-primary mx-2" href="#" role="button">GITHUB</a>
+            <a class="btn btn-warning mx-2" href="#" role="button">CodePen</a>
+        </div>
     </section>
 
-
-    <!-- contact -->
-    <section id="contact" class="pt-5">
-        <h2>Contact</h2>
-    </section>
+    <!-- footer -->
+    <footer class="bg-secondary py-3 pt-4">
+        <main class="container-fluid">
+            <!-- contact -->
+            <h3 class="fw-bolder text-center mb-3">Learn more about Me</h3>
+            <ul class="row list-unstyled justify-content-center">
+                <li class="col-1"><a href="#"><img src="./images/logo/fb.svg" alt="fb"></a></li>
+                <li class="col-1"><a href="#"><img src="./images/logo/instagram.svg" alt="instagram"></a></li>
+                <li class="col-1"><a href="#"><img src="./images/logo/line.svg" alt="line"></a></li>
+            </ul>
+            <hr>
+            <p class="py-3 m-0 text-center text-white-50"><span class="fw-3">logo</span> © Copyright 2023. All rights
+                reserved.</p>
+        </main>
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
-   
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
 </body>
 
 </html>
