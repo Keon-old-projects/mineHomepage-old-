@@ -1,12 +1,15 @@
 //字體
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); 
+// @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-@import "./variable";//自訂變數，必須在導入 Bootstrap 的 SCSS 主文件之前，否則無法成功
+// @import "./variable";//自訂變數，必須在導入 Bootstrap 的 SCSS 主文件之前，否則無法成功
 
 
 //css reset 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 //自訂
+@import "./module";
 @import "./mixin";//自訂套件
+@import "./anime";//自訂動畫
 @import "main";//自訂內容
