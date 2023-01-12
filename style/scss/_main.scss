@@ -2,17 +2,32 @@
   font-family: 'Noto Sans TC', Microsoft YaHei, Arial, '宋體', Tahoma, Helvetica, sans-serif;
 }
 
+// hover
+.hover {
+  transition: all .25s;
+
+  &-scale:hover {
+    transform: scale(1.2);
+  }
+
+}
+
+
+
+
 // 尺寸設定
-.vh{
-  &-25{
+.vh {
+  &-25 {
     height: 25vh;
 
   }
-  &-50{
+
+  &-50 {
     height: 50vh;
 
   }
 }
+
 
 
 // 背景設定
@@ -23,12 +38,20 @@
   background-repeat: no-repeat;
 
   &-1 {
-    background-image: url("https://fakeimg.pl/1000/?text=Home");
+    background-image: url("https://fakeimg.pl/1000/?text=user");
   }
+
   &-2 {
-    background-image: url("https://fakeimg.pl/1000/?text=Home");
+    background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    color: $white;
   }
+
+  &-3 {
+    background-image: url('../../images/bg-img-3.png');
+  }
+
 }
+
 
 // 卡片設定
 .card-img-overlay {
@@ -43,9 +66,86 @@
 
   &:hover {
     background-color: rgba($dark, .7);
+
     span {
       display: inline;
       color: $light;
     }
   }
+}
+
+
+
+.card-project {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+
+  a {
+    display: block;
+    height: 100%;
+    position: relative;
+
+    span {
+      display: none;
+      position: absolute;
+      height: 100%;
+      background-color: rgba($dark, 0.5);
+      transition: all 1s;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%),
+      0 6px 20px 0 rgb(0 0 0 / 19%);
+
+    span {
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+footer {
+  ul li {
+    min-height: 50px;
+    max-height: 75px;
+  }
+}
+
+// skills
+.img-box {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: .65;
+  @extend .hover;
+
+  span {
+    position: absolute;
+    display: none;
+    top: 100%;
+    background-color: rgba($dark, 0.5);
+    border-radius: 3px;
+    padding: 5px;
+    color: $gray-200;
+  }
+
+  &:hover {
+    opacity: .9;
+
+    span {
+      display: block;
+
+    }
+  }
+
 }

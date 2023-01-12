@@ -10965,6 +10965,13 @@ textarea.form-control-lg {
   font-family: "Noto Sans TC", Microsoft YaHei, Arial, "宋體", Tahoma, Helvetica, sans-serif;
 }
 
+.hover, .img-box {
+  transition: all 0.25s;
+}
+.hover-scale:hover {
+  transform: scale(1.2);
+}
+
 .vh-25 {
   height: 25vh;
 }
@@ -10978,10 +10985,14 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
 }
 .bg-img-1 {
-  background-image: url("https://fakeimg.pl/1000/?text=Home");
+  background-image: url("https://fakeimg.pl/1000/?text=user");
 }
 .bg-img-2 {
-  background-image: url("https://fakeimg.pl/1000/?text=Home");
+  background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  color: #fff;
+}
+.bg-img-3 {
+  background-image: url("../../images/bg-img-3.png");
 }
 
 .card-img-overlay {
@@ -10996,4 +11007,62 @@ textarea.form-control-lg {
 .card-img-overlay:hover span {
   display: inline;
   color: #f8f9fa;
+}
+
+.card-project {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.card-project a {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.card-project a span {
+  display: none;
+  position: absolute;
+  height: 100%;
+  background-color: rgba(33, 37, 41, 0.5);
+  transition: all 1s;
+}
+.card-project:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-project:hover span {
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li {
+  min-height: 50px;
+  max-height: 75px;
+}
+
+.img-box {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0.65;
+}
+.img-box span {
+  position: absolute;
+  display: none;
+  top: 100%;
+  background-color: rgba(33, 37, 41, 0.5);
+  border-radius: 3px;
+  padding: 5px;
+  color: #e9ecef;
+}
+.img-box:hover {
+  opacity: 0.9;
+}
+.img-box:hover span {
+  display: block;
 }/*# sourceMappingURL=bs5-all.css.map */

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Keon | Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/css/bs5-all.css">
 </head>
 
@@ -138,31 +139,35 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
             </div>
-            <main class="carousel-inner">
+            <main class="carousel-inner bg-img bg-img-3">
                 <!-- main1 -->
-                <div class="carousel-item bg-secondary active py-5">
+                <div class="carousel-item active py-5">
 
-                    <div class="container">
-                        <h2 class="text-center">Front-End Skills</h2>
-                        <div class="d-flex justify-content-center py-3">
-                            <p> b5-col</p>
-                            <p> b5-col</p>
-                            <p> b5-col</p>
-                            <p> b5-col</p>
+                    <div class="container py-5">
+                        <h2 class="text-center text-white">Front-End Skills</h2>
+                        <div class="row justify-content-center g-2 py-3">
+                            <div class="img-box col p-3 mx-2"><i class="fa-brands fa-html5 fa-3x"></i><span>HTML 5</span></div>
+                            <div class="img-box col p-3 mx-2"><i class="fa-brands fa-css3-alt fa-3x"></i><span>CSS 3</span></div>
+                            <div class="img-box col p-3 mx-2"><i class="fa-brands fa-js fa-3x"></i><span>Javascript</span></div>
+                            <div class="img-box col p-3 mx-2"><i class="fa-brands fa-sass fa-3x"></i><span>scss</span></div>
+                            <div class="img-box col p-3 mx-2"><i class="fa-brands fa-bootstrap fa-3x"></i><span>bootstrap5</span></div>
+                            
                         </div>
                     </div>
 
                 </div>
 
                 <!-- main2 -->
-                <div class="carousel-item bg-secondary py-5">
-                    <div class="container">
-                        <h2 class="text-center">Tools & Other</h2>
-                        <div class="d-flex justify-content-center py-3">
-                            <p> b5-col</p>
-                            <p> b5-col</p>
-                            <p> b5-col</p>
-                            <p> b5-col</p>
+                <div class="carousel-item py-5">
+                    <div class="container py-5">
+                        <h2 class="text-center text-white">Tools & Other</h2>
+                        <div class="row justify-content-center g-2 py-3">
+                            <div class="img-box col d-none d-sm-flex p-3 mx-2 opacity-0"></div>
+                            <div class="img-box col p-3  mx-2"><i class="fa-brands fa-github fa-3x"></i><span>GITHUB</span></div>
+                            <div class="img-box col p-3  mx-2"><i class="fa-brands fa-git-alt fa-3x"></i><span>git</span></div>
+                            <div class="img-box col p-3  mx-2"><i class="fa-brands fa-npm fa-3x"></i><span>NPM</span></div>
+                            <div class="img-box col d-none d-sm-flex p-3 mx-2 opacity-0"></div>
+                           
                         </div>
                     </div>
                 </div>
@@ -184,62 +189,67 @@
     <!-- project -->
     <section id="project" class="container pt-5 pb-4">
         <h2 class="fw-bolder text-center mb-4">Project<br>
-            <em class="fs-6 text-muted"> 我的作品成果</em>
+            <em class="fs-6 text-muted">從網路上找到免費的UI/UX設計，然後自己用HTML + CSS + bootstrap將網頁前端美化以及提升使用外觀。</em>
         </h2>
         <!-- 卡片區 -->
-        <main class="row row-cols-lg-1 row-cols-2 g-3">
-            <!-- 卡片 -->
+        <main class="row row-cols-1 row-cols-md-3 row-cols-xl-1 g-3 px-4 px-md-0">
+            <!-- bs5 卡片 -->
             <div class="col">
                 <div class="card flex-row border-0">
-                    <picture>
-                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
-                    </picture>
-                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <figure class="card-project rounded-2 overflow-hidden">
+                        <a href="#" target="_blank" class="hover hover-scale bg-img" style="background-image: url('./images/1673503707657.jpg');">
+                            <span class="fs-1 fw-bolder">Bootstrap 5</span>
+                            <img src="https://picsum.photos/500/?random=10" class="card-img opacity-0">
+                        </a>
+                    </figure>
+                    <div class="card-body d-none d-xl-flex flex-column justify-content-center ps-5">
+                        <h5 class="card-title">Bootstrap 5</h5>
+                        <p class="card-text">使用 Bootstrap 快速完成切版版型，製作SPA網站，加強切版熟練度，並套用js套件製造部份動畫效果</p>
                     </div>
                 </div>
             </div>
-            <!-- 卡片 -->
+           
+
+           
+            <!-- f2e 卡片 -->
             <div class="col">
                 <div class="card flex-row border-0">
-                    <picture>
-                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
-                    </picture>
-                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <figure class="card-project rounded-2 overflow-hidden">
+                        <a href="#" target="_blank" class="hover hover-scale bg-img" style="background-image: url('./images/f2e.jpg');">
+                            <span class="fs-1 fw-bolder">The F2E</span>
+                            <img src="https://picsum.photos/500/?random=10" class="card-img opacity-0">
+                        </a>
+                    </figure>
+                    <div class="card-body d-none d-xl-flex flex-column justify-content-center ms-5">
+                        <h5 class="card-title">The F2E</h5>
+                        <p class="card-text">參加六角學院舉辦的THE F2E活動，使用套件 GSAP以及JQuery，製作出一個互動式網誌</p>
                     </div>
                 </div>
             </div>
-            <!-- 卡片 -->
+
+                       
+            <!-- TodoList 卡片 -->
             <div class="col">
                 <div class="card flex-row border-0">
-                    <picture>
-                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
-                    </picture>
-                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <figure class="card-project rounded-2 overflow-hidden">
+                        <a href="#" target="_blank" class="hover hover-scale bg-img" style="background-image: url('./images/todolist.jpg');">
+                            <span class="fs-1 fw-bolder">TodoList</span>
+                            <img src="https://picsum.photos/500/?random=10" class="card-img opacity-0">
+                        </a>
+                    </figure>
+                    <div class="card-body d-none d-xl-flex flex-column justify-content-center ps-5">
+                        <h5 class="card-title">TodoList</h5>
+                        <p class="card-text">利用 JavaScript 原生語法實作簡易 Todo List。TodoList 看似簡單的介面，但其實隱藏了很多小細節；</p>
+                        <ul class=" list-unstyled">
+                            <li>選取 DOM 元素</li>
+                            <li>監聽及更新</li>
+                            <li>localStorage 和 sessionStorage</li>
+                        </ul>
+                        <p class="card-text text-danger"><small>※正在學習react框架，考慮過年期間把原生與法版本的todolist改作成react版本的</small></p>
                     </div>
                 </div>
             </div>
-            <!-- 卡片 -->
-            <div class="col">
-                <div class="card flex-row border-0">
-                    <picture>
-                        <a href="#"><img src="https://picsum.photos/500/?random=10" class="card-img"></a>
-                    </picture>
-                    <div class="card-body d-none d-lg-flex flex-column justify-content-center ms-5">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
+
         </main>
     </section>
 
@@ -247,9 +257,9 @@
     <!-- more -->
     <section id="more" class="d-flex flex-column justify-content-center vh-50 bg-img bg-img-2">
         <h2 class="fw-bolder text-center mb-4">See More Me</h2>
-        <div class="text-center">
-            <a class="btn btn-primary mx-2" href="#" role="button">GITHUB</a>
-            <a class="btn btn-warning mx-2" href="#" role="button">CodePen</a>
+        <div class="text-center" id="more-btn">
+            <a class="btn btn-primary mx-2" href="https://github.com/keon981" role="button" target="_blank"><span class="px-2">GITHUB</span><i class="fa-brands fa-github"></i></a>
+            <a class="btn btn-warning mx-2" href="https://codepen.io/keon981" role="button" target="_blank"><span class="px-2">CodePen</span><i class="fa-brands fa-codepen"></i></a>
         </div>
     </section>
 
@@ -257,20 +267,20 @@
     <footer class="bg-secondary py-3 pt-4">
         <main class="container-fluid">
             <!-- contact -->
-            <h3 class="fw-bolder text-center mb-3">Learn more about Me</h3>
-            <ul class="row list-unstyled justify-content-center">
-                <li class="col-1"><a href="#"><img src="./images/logo/fb.svg" alt="fb"></a></li>
-                <li class="col-1"><a href="#"><img src="./images/logo/instagram.svg" alt="instagram"></a></li>
-                <li class="col-1"><a href="#"><img src="./images/logo/line.svg" alt="line"></a></li>
+            <h3 class="mb-3 text-light fw-bolder text-center">Learn more about Me</h3>
+            <ul class="row list-unstyled justify-content-center ">
+                <li class="col-2 col-lg-1 text-center"><a href="#"><img src="./images/logo/fb.svg" alt="fb" class="h-100"></a></li>
+                <li class="col-2 col-lg-1 text-center"><a href="#"><img src="./images/logo/instagram.svg" alt="instagram" class="h-100"></a></li>
+                <li class="col-2 col-lg-1 text-center"><a href="#"><img src="./images/logo/line.svg" alt="line" class="h-100"></a></li>
             </ul>
             <hr>
-            <p class="py-3 m-0 text-center text-white-50"><span class="fw-3">logo</span> © Copyright 2023. All rights
-                reserved.</p>
+            <p class="py-3 m-0 text-center text-white-50"><span class="fw-3">logo</span> © Copyright 2023. All rights reserved.</p>
         </main>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/gsap/dist/gsap.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 
 </body>
